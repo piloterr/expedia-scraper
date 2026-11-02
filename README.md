@@ -72,7 +72,7 @@ response = requests.get(
     params={
         "query": "https://www.expedia.com/New-York-Hotels-Hilton-New-York-Fashion-District.h3117215.Hotel-Information",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -200,7 +200,7 @@ response = requests.get(
     params={
         "query": "JFK-LAX",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -333,7 +333,7 @@ response = requests.get(
     params={
         "query": "https://euro.expedia.net/Hotel-Search?currency=EUR&siteid=4400&destination=Toulouse",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
